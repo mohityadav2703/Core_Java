@@ -8,8 +8,6 @@ public class NthLargestNumber {
 		Scanner sc= new Scanner(System.in);
 		System.out.println("Enter the position of largest number :");
 		int larg=sc.nextInt();
-		System.out.println("Enter the position of smallest number :");
-		int small=sc.nextInt();
 		
 		for(int i=0;i<a.length;i++) {
 			for(int j=i+1;j<a.length;j++) {
@@ -25,6 +23,6 @@ public class NthLargestNumber {
 			System.out.print(no+" ");
 		}
 		System.out.println("\nLargest Number of position "+larg+" is :"+a[larg-1]);
-		System.out.println("Smallest Number of position "+small+" is :"+a[a.length-small]);
+	
 	}
 }

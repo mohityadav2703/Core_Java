@@ -44,10 +44,10 @@ public class RemoveDuplicate {
 //		System.out.println(sb2);
 		
 		//fourth way
-		Set<Character> set = new LinkedHashSet<>();
-		for(int i=0;i<str.length();i++) {
-			set.add(str.charAt(i));
-		}
-		set.iterator().forEachRemaining(System.out ::print);
+//		Set<Character> set = new LinkedHashSet<Character>();
+//		for(int i=0;i<str.length();i++) {
+//			set.add(str.charAt(i));
+//		}
+//		System.out.println(set);
 	}
 }

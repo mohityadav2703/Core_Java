@@ -8,38 +8,16 @@ public class ReverseEachWord {
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter The String :");
 		String str=sc.nextLine();
+		String revWord="";
 		
-		// First Way
-		String output="";
-		String[] words=str.split(" ");
+		// this is mohit kumar
+		String []words = str.split(" ");
 		for(String word : words) {
-			String revWord="";
-			//reverse Word
-			for(int i=word.length()-1;i>=0;i--) {
-				revWord=revWord+word.charAt(i);
-			}
-			output=output+revWord+" ";
-		}
-		System.out.println(output);
-		
-		// Second Way
-		for(String word1 :words) {
-			String revWord1="";
-			StringBuffer sb=new StringBuffer(word1);
+			StringBuffer sb = new StringBuffer(word);
 			sb.reverse();
-			revWord1=revWord1+sb+" ";
-			System.out.print(revWord1);
+			revWord=revWord+sb+" ";
 		}
-		System.out.println("");
-		// Third Way
-		for(String word2 :words) {
-			String revWord2="";
-			StringBuilder sb1=new StringBuilder(word2);
-			sb1.reverse();
-			revWord2=revWord2+sb1+" ";
-			
-			System.out.print(revWord2);
-		}
-		sc.close();
+		System.out.println(revWord);
+		
 	}
 }

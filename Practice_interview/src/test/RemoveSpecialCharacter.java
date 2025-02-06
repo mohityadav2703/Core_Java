@@ -9,7 +9,7 @@ public class RemoveSpecialCharacter {
 		System.out.println("Enter the String :");
 		String str = sc.nextLine();
 		
-		String str1=str.replaceAll("[^a-zA-Z0-9]","");
+		String str1 = str.replaceAll("[^a-zA-Z0-9]", " ");
 		System.out.println(str1);
 	}
 	

@@ -9,8 +9,8 @@ public class RotateArray {
 	public static void main(String[] args) {
 		int []arr= {1,2,3,4,5,6,7};
 		int pos=3, index=0;
-		int[] arr1=new int[arr.length];
 		
+		int []arr1=new int[arr.length];
 		for(int i=pos;i<arr.length;i++) {
 			arr1[index]=arr[i];
 			index++;
@@ -20,8 +20,8 @@ public class RotateArray {
 			index++;
 		}
 		
-		for(int ab : arr1) {
-			System.out.print(ab+" ");
+		for(Integer k : arr1) {
+			System.out.print(k+" ");
 		}
 	}
 

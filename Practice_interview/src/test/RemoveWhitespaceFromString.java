@@ -6,6 +6,7 @@ public class RemoveWhitespaceFromString {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter The String ");
 		String str = sc.nextLine();
+		
 		int count=0;
 		String str1=str.replaceAll("\\s", "");
 		System.out.println(str1);
